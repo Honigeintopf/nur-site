@@ -1,0 +1,16 @@
+:root { --bg: #050907; --ink: #fff; --dim: rgba(255,255,255,.62); --faint: rgba(255,255,255,.36); --mint: #A8D5BC; --line: rgba(255,255,255,.1); }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(120% 80% at 50% -10%, #0F3324 0%, var(--bg) 60%) fixed, var(--bg); color: var(--ink); font-family: 'Inter', -apple-system, 'Segoe UI', 'Noto Sans Arabic', sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 56px 20px 80px; }
+nav { display: flex; gap: 14px; font-size: 14px; margin-bottom: 40px; }
+nav a { color: var(--dim); text-decoration: none; } nav a:hover { color: var(--mint); }
+.logo { width: 72px; height: 72px; border-radius: 18px; margin-bottom: 20px; }
+h1 { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; font-size: 52px; line-height: 1; margin: 0 0 14px; }
+h2 { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--mint); margin: 32px 0 8px; }
+section[dir=rtl] h2 { letter-spacing: 0; }
+p, li { font-size: 16px; line-height: 1.6; color: var(--dim); margin: 0 0 10px; }
+p.lead { font-size: 18px; color: var(--ink); }
+a { color: var(--mint); }
+ul { padding-inline-start: 20px; margin: 0 0 10px; }
+section + section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 40px; }
+footer { margin-top: 48px; font-size: 13px; color: var(--faint); }
